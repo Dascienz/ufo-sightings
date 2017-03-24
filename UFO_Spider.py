@@ -52,5 +52,5 @@ class UfoSpider(scrapy.Spider):
 
 # Run from the Terminal command line.
 # 1.) pip install scrapy
-# 2.) scrapy crawl UFO_Spider -o uforeports.csv
+# 2.) scrapy runspider UFO_Spider -o uforeports.csv
 
