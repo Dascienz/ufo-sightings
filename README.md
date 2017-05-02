@@ -1,7 +1,7 @@
 # UFO_Sightings
 Scraped data from www.nuforc.org
 
-This is a series of .csv and .py files for scraping, visualizing, and analyzing U.F.O. data from www.nuforc.org. I apologize in advance as this was my first independent data science project, code readibility and efficiency are not optimized.
+This is a series of .csv and .py files for scraping, visualizing, and analyzing U.F.O. data from www.nuforc.org. I apologize in advance as code readibility and efficiency are not optimized. Files can be run in python 2.7.
 
 ## DATA FILES
 
