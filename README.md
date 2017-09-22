@@ -1,12 +1,12 @@
 # UFO_Sightings
 Scraped data from www.nuforc.org
 
-This is a series of .csv and .py files for scraping, visualizing, and analyzing U.F.O. data from www.nuforc.org. I apologize in advance as code readibility and efficiency are not optimized. Files can be run in python 2.7.
+This is a series of .py files for scraping, visualizing, and analyzing U.F.O. data from www.nuforc.org. .csv files are also provided. I apologize in advance as code readibility and efficiency are not optimized. Files can be run as is in python 2.7.
 
 ## DATA FILES
 
 ### uforeports.csv
-To obtain the scraped results .csv file run from your terminal the following commands:
+To obtain the scraped results .csv file run the following commands from your terminal:
 1. `cd /path/to/files/directory`
 2. `zip -F splituforeports.zip --out uforeports.zip`
 3. `unzip uforeports.zip`
@@ -14,7 +14,7 @@ To obtain the scraped results .csv file run from your terminal the following com
 You should have a file named uforeports.csv which contains raw U.F.O. sightings entries scraped from nuforc.org. You're welcome to scrape your own files using `UFO_Spider.py`.
 
 ### Coordinates_Full.csv
-Contains latitude and longitude coordinates for sightings. These results were obtained utilizing the geopy code block in `UFO_Processing.py`.
+Contains latitude and longitude coordinates for sightings. These results were obtained using geopy.
 
 ### Airport_Data.csv
 Latitude and longitude coordinates for airports, heliports, and seaplane bases across the United States. Spreadsheet sliced from data obtained from <https://www.faa.gov/airports/airport_safety/airportdata_5010/>.
@@ -35,7 +35,7 @@ Code used for scraping U.F.O. sightings data from www.nuforc.org. You may scrape
 
 ### 2. UFO_Processing.py
 
-Code I wrote by brute/crude force to clean and organized the scraped text entries.
+Ugly code I wrote to clean up and organize the scraped text entries.
 
 ### 3. UFO_Sightings.py
 
