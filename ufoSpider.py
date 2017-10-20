@@ -25,5 +25,5 @@ class ufoSpider(scrapy.Spider):
     
     def parse_report(self, response):
         """Yield each witness report."""
-        report = response.xpath('//table//font//text()').extract()
-        yield {'report': report}
+        description = response.xpath('//table//font//text()').extract()
+        yield {'description': description}
