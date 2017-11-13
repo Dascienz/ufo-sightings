@@ -6,7 +6,12 @@ This is a series of .py files for scraping, visualizing, and analyzing U.F.O. da
 ## DATA FILES
 
 ### nuforcReports.csv
-Unzip `Archive.zip` and import nuforcReports.csv into `ufoProcessing.py`. The script will output a file named `ufoData.csv` which contains structured U.F.O. sightings data which you can use for analysis and modeling. You're welcome to scrape your own files using `ufoSpider.py`, but obtaining geographic coordinates can be annoying since server requests can take a long time and you have the potential of getting kicked.
+Run the following commands on the zipped data files (Apologies if there is any loss, I haven't checked thoroughly.): 
+
+1.  `zip -F archive.zip --out unsplit.zip` 
+2.  `unzip unsplit.zip`
+
+Now you can go into the new folder `Files` and find nuforcReports.csv to import into `ufoProcessing.py`. The script should output a file named `ufoData.csv` which contains structured U.F.O. sightings data which you can use for analysis and modeling. You're welcome to scrape your own files using `ufoSpider.py`, but obtaining geographic coordinates can be annoying since server requests can take a long time and you have the potential of getting kicked.
 
 ### locationData.csv
 Contains latitude and longitude coordinates for sightings. These results were obtained using `geopy`.
