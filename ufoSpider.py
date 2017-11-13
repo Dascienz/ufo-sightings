@@ -18,7 +18,7 @@ class ufoSpider(scrapy.Spider):
 
     def parse(self, response):
         """Collect all links from each url listed in start_urls."""
-        links = response.xpath("//a/@href").extract()
+        links = response.xpath('//a/@href').extract()
         for link in links:
             url = urlparse.urljoin(response.url, link)
             yield scrapy.Request(url, callback = self.parse_report)
