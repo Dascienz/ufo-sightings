@@ -6,15 +6,10 @@ This is a series of .py files for scraping, visualizing, and analyzing U.F.O. da
 ## DATA FILES
 
 ### nuforcReports.csv
-To obtain the scraped results .csv file run the following commands from your terminal:
-1. `cd /path/to/files/directory`
-2. `zip -F splituforeports.zip --out uforeports.zip`
-3. `unzip uforeports.zip`
-
-You should have a file named uforeports.csv which contains raw U.F.O. sightings entries scraped from nuforc.org. You're welcome to scrape your own files using `UFO_Spider.py`.
+Unzip `Archive.zip` and import nuforcReports.csv into `ufoProcessing.py`. The script will output a file named `ufoData.csv` which contains structured U.F.O. sightings data which you can use for analysis and modeling. You're welcome to scrape your own files using `ufoSpider.py`, but obtaining geographic coordinates can be annoying since server requests can take a long time and you have the potential of getting kicked.
 
 ### locationData.csv
-Contains latitude and longitude coordinates for sightings. These results were obtained using geopy.
+Contains latitude and longitude coordinates for sightings. These results were obtained using `geopy`.
 
 ### airportData.csv
 Latitude and longitude coordinates for airports, heliports, and seaplane bases across the United States. Spreadsheet sliced from data obtained from <https://www.faa.gov/airports/airport_safety/airportdata_5010/>.
