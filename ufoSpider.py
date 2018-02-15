@@ -7,9 +7,9 @@ from scrapy.http import Request
 import urllib.parse as urlparse
 
 shape_list = ['Unspecified','changed','Changing','Chevron','Cigar','Circle','Cone','Crescent',
-                  'Cross','Cylinder','Delta','Diamond','Disk','Dome','Egg','Fireball','Flare','Flash',
-                  'Formation','Hexagon','Light','Other','Oval','pyramid','Rectangle','Round','Sphere',
-                  'Teardrop','Triangle','TRIANGULAR','Unknown']
+              'Cross','Cylinder','Delta','Diamond','Disk','Dome','Egg','Fireball','Flare','Flash',
+              'Formation','Hexagon','Light','Other','Oval','pyramid','Rectangle','Round','Sphere',
+              'Teardrop','Triangle','TRIANGULAR','Unknown']
     
 class ufoSpider(scrapy.Spider):
     name = 'ufo'
