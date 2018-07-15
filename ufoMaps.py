@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 """
 Created on Fri Mar 17 15:01:02 2017
 
