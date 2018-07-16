@@ -59,7 +59,7 @@ DOWNLOADER_MIDDLEWARES = {
         'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
         'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
         'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-	    'craigslistVehicles.middlewares.RotateUserAgentMiddleware': 110,
+	    'nuforc_scraper.middlewares.RotateUserAgentMiddleware': 110,
     }
 
 

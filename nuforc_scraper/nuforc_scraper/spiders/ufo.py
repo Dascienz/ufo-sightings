@@ -23,7 +23,7 @@ class UfoSpider(scrapy.Spider):
 		event_links = response.xpath('//td//a/@href').extract()
 		for link in event_links:
 			url = urlparse.urljoin(response.url, link)
-			request = scrapy.Request(url, callback='parse_report')
+			request = scrapy.Request(url, callback=self.parse_report)
 			yield request
 	
 	def parse_report(self, response):
