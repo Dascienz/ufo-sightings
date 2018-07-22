@@ -23,3 +23,4 @@ Latitude and longitude coordinates for airports, heliports, and seaplane bases a
 Latitude and longitude coordinates for military bases across the United States. Obtained from <https://www.google.com/maps/d/viewer?mid=1hvB-oq9gE0H8gEwKJ4XHFOKaY5k&hl=en_US&ll=49.67042577190774%2C-117.29381349999994&z=2>
 
 Download the KML file and convert it to CSV using software of your choice.
+

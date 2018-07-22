@@ -40,6 +40,6 @@ class UfoSpider(scrapy.Spider):
 		Location = re.findall('Location:(.*?)Shape', details)[0].strip().strip(',')
 		Shape = re.findall('Shape:(.*?)Duration', details)[0].strip().strip(',')
 		Duration = re.findall('Duration:(.*?)$', details)[0].strip().strip(',')
-		Report = report[1].strip().strip(',')
+		Report = report[1].strip().replace('Summary:','').strip(',')
 		
 		yield {'Occurred':Occurred,'Reported':Reported,'Posted':Posted,'Location':Location,'Shape':Shape,'Duration':Duration,'Report':Report}
